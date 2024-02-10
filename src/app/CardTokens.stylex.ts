@@ -3,12 +3,12 @@
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
+ *
+ * @format
  */
 
-@layer reset {
-  * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
-}
+import * as stylex from '@stylexjs/stylex';
+
+export const tokens = stylex.defineVars({
+  arrowTransform: 'translateX(0)',
+});
